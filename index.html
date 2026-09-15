@@ -1,73 +1,58 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080808">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
 <title>ROMA SOUND FACTORY</title>
 <style>
 *{box-sizing:border-box}
-body{
- margin:0; min-height:100vh; display:flex; justify-content:center;
- font-family:Arial,"Segoe UI",sans-serif; color:#fff;
- background:radial-gradient(circle at 50% 10%,#252525 0,#0c0c0c 38%,#000 100%);
+html,body{margin:0;background:#000;min-height:100%;font-family:Arial,Helvetica,sans-serif}
+.page{position:relative;width:min(100%,1024px);margin:0 auto;line-height:0;overflow:hidden}
+.page img{display:block;width:100%;height:auto}
+.link{
+ position:absolute;left:15.2%;width:69.6%;height:8.3%;
+ display:block;border-radius:50px;
 }
-.wrap{width:min(460px,100%);padding:28px 18px 36px;text-align:center}
-.card{
- background:rgba(18,18,18,.88); border:1px solid #2d2d2d;
- border-radius:28px; padding:26px 18px 22px;
- box-shadow:0 20px 70px rgba(0,0,0,.55); backdrop-filter:blur(8px);
+.tiktok{top:34.1%}
+.instagram{top:44.5%}
+.facebook{top:54.9%}
+.whatsapp{top:65.3%}
+.location{top:75.8%}
+@media(max-width:600px){
+ .link{left:14.5%;width:71%;height:8.4%}
 }
-.logo{width:150px;height:150px;object-fit:cover;border-radius:50%;border:4px solid #eee;box-shadow:0 0 0 4px #e11,0 12px 35px #000;margin:4px auto 18px}
-h1{font-size:25px;letter-spacing:3px;margin:0 0 6px;font-weight:800}
-.sub{color:#bbb;font-size:14px;margin:0 0 22px}
-.links{display:grid;gap:12px}
-a{
- display:flex;align-items:center;justify-content:center;gap:10px;
- min-height:56px;padding:0 18px;border-radius:16px;
- color:#fff;text-decoration:none;font-size:17px;font-weight:700;
- border:1px solid #333;background:#151515;
- transition:.18s transform,.18s background;
-}
-a:hover{transform:translateY(-2px);background:#202020}
-.icon{width:27px;font-size:21px}
-.tiktok{border-color:#444}.instagram{border-color:#444}.facebook{border-color:#444}.whatsapp{border-color:#444}
-.footer{margin-top:22px;color:#777;font-size:12px;letter-spacing:1px}
-.red{color:#e60000}
 </style>
 </head>
 <body>
-<div class="wrap">
- <main class="card">
-  <img class="logo" src="logo.jpg" alt="ROMA SOUND FACTORY">
-  <h1>ROMA SOUND FACTORY</h1>
-  <p class="sub">NEVER BE CALM</p>
+<div class="page">
+  <img src="roma-sound-factory.png" alt="ROMA SOUND FACTORY - NEVER BE CALM">
 
-  <div class="links">
-  <a href="https://www.tiktok.com/@reham.mahmoud666" target="_blank">
-    <i class="fa-brands fa-tiktok"></i>
-    TikTok
-</a>
-<a href="https://www.instagram.com/romasoundfactory" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-    Instagram
-</a>
-<a href="https://www.facebook.com/share/1EfpTcCgEH/" target="_blank">
-    <i class="fa-brands fa-facebook"></i>
-    Facebook
-</a>
-<a href="https://wa.me/201159045548" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-    WhatsApp
-</a>
-<a href="https://maps.app.goo.gl/eQCurNDkHB514VCW7?g_st=ic" target="_blank">
-    <i class="fa-solid fa-location-dot"></i>
-    Location
-</a>
-  </div>
+  <a class="link tiktok"
+     href="https://www.tiktok.com/@reham.mahmoud666"
+     target="_blank" rel="noopener"
+     aria-label="TikTok"></a>
 
-  <div class="footer">ROMA SOUND FACTORY <span class="red">●</span> NEVER BE CALM</div>
- </main>
+  <a class="link instagram"
+     href="https://www.instagram.com/romasoundfactory"
+     target="_blank" rel="noopener"
+     aria-label="Instagram"></a>
+
+  <a class="link facebook"
+     href="https://www.facebook.com/share/1EfpTcCgEH/"
+     target="_blank" rel="noopener"
+     aria-label="Facebook"></a>
+
+  <a class="link whatsapp"
+     href="https://wa.me/201159045548"
+     target="_blank" rel="noopener"
+     aria-label="WhatsApp"></a>
+
+  <!-- Replace this URL with the real Google Maps location when available -->
+  <a class="link location"
+     href="https://www.google.com/maps"
+     target="_blank" rel="noopener"
+     aria-label="Location"></a>
 </div>
 </body>
 </html>
